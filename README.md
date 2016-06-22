@@ -112,3 +112,12 @@ private void button5_Click(object sender, EventArgs e)
             else
                 textBox1.Text = textBox1.Text + "6";
         }
+  private void button2_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "0")
+            {
+                textBox1.Text = "7";
+            }
+            else
+                textBox1.Text = textBox1.Text + "7";
+        }
