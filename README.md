@@ -148,3 +148,62 @@ private void button5_Click(object sender, EventArgs e)
             FirstNumber = Convert.ToDouble(textBox1.Text);
             textBox1.Text = "";
             OperationID = 3;
+}
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            FirstNumber = Convert.ToDouble(textBox1.Text);
+            textBox1.Text = "";
+            OperationID = 4;
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            OperationID = 0;
+            FirstNumber = 0;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(textBox1.Text.Contains("."))
+            { }
+            else
+                textBox1.Text = textBox1.Text + ".";
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            switch (OperationID)
+            {
+                case 1:
+                    textBox1.Text = Convert.ToString(Convert.ToDouble(textBox1.Text)+ FirstNumber);
+                    break;
+                case 2:
+                    textBox1.Text = Convert.ToString(FirstNumber - Convert.ToDouble(textBox1.Text));
+                    break;
+                case 3:
+                    textBox1.Text = Convert.ToString(Convert.ToDouble(textBox1.Text) * FirstNumber);
+                    break;
+                case 4:
+                    textBox1.Text = Convert.ToString(FirstNumber / Convert.ToDouble(textBox1.Text));
+                    break;
+            }
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar)
+                && !char.IsDigit(e.KeyChar)
+                && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+            if(e.KeyChar == '.')
+            {
+                if (textBox1.Text.Contains('.'))
+                    e.Handled = true;
+            }
+        }
+    }
+}
