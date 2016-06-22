@@ -136,3 +136,10 @@ private void button5_Click(object sender, EventArgs e)
             textBox1.Text = "";
             OperationID = 2;
         }
+ private void button14_Click(object sender, EventArgs e)
+        {
+            FirstNumber = Convert.ToDouble(textBox1.Text);
+            textBox1.Text = "";
+            OperationID = 1;
+        
+        }
