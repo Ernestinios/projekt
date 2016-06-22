@@ -103,3 +103,12 @@ private void button5_Click(object sender, EventArgs e)
             else
                 textBox1.Text = textBox1.Text + "0";
         }
+       private void button6_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "0")
+            {
+                textBox1.Text = "6";
+            }
+            else
+                textBox1.Text = textBox1.Text + "6";
+        }
