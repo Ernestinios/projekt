@@ -21,3 +21,27 @@ namespace kalkulator1
         {
             InitializeComponent();
         }
+private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "0")
+            {
+                textBox1.Text =  "1";
+            }
+            else
+                textBox1.Text = textBox1.Text + "1";
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "0")
+            {
+                textBox1.Text = "4";
+            }
+            else
+                textBox1.Text = textBox1.Text + "4";
+        }
