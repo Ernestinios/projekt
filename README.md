@@ -143,3 +143,8 @@ private void button5_Click(object sender, EventArgs e)
             OperationID = 1;
         
         }
+  private void button13_Click(object sender, EventArgs e)
+        {
+            FirstNumber = Convert.ToDouble(textBox1.Text);
+            textBox1.Text = "";
+            OperationID = 3;
