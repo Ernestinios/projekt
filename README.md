@@ -45,3 +45,42 @@ private void textBox1_TextChanged(object sender, EventArgs e)
             else
                 textBox1.Text = textBox1.Text + "4";
         }
+   private void button4_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "0")
+            {
+                textBox1.Text = "4";
+            }
+            else
+                textBox1.Text = textBox1.Text + "4";
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "0")
+            {
+                textBox1.Text = "8";
+            }
+            else
+                textBox1.Text = textBox1.Text + "8";
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "0")
+            {
+                textBox1.Text = "5";
+            }
+            else
+                textBox1.Text = textBox1.Text + "5";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "0")
+            {
+                textBox1.Text = "2";
+            }
+            else
+                textBox1.Text = textBox1.Text + "2";
+        }
