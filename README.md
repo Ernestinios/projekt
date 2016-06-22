@@ -130,3 +130,9 @@ private void button5_Click(object sender, EventArgs e)
             else
                 textBox1.Text = textBox1.Text + "9";
         }
+   private void button15_Click(object sender, EventArgs e)
+        {
+            FirstNumber = Convert.ToDouble(textBox1.Text);
+            textBox1.Text = "";
+            OperationID = 2;
+        }
